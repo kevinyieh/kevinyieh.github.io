@@ -1,0 +1,60 @@
+body, p {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #485059;
+    padding: 10px;
+}
+
+div {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Titillium Web","Varela Round", sans-serif;
+    display: flex;
+}
+
+.header {
+    /* background-color: #F2BC79;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 600;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,.2), 30px 20px 50px -7px rgba(0,0,0,.4); */
+    color: white;
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -1;
+}
+
+#burger-and-name {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
+
+#burger {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    width: 25px
+}
+#burger div {
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin: 3px 0;
+}
+#burger:hover {
+    cursor: pointer;
+}
