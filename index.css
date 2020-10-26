@@ -14,7 +14,11 @@ div {
     font-family: "Titillium Web","Varela Round", sans-serif;
     display: flex;
 }
-
+.separator {
+    height: 1px;
+    background-color: gray;
+    width: 100%;
+}
 .header {
     /* background-color: #F2BC79;
     justify-content: center;
@@ -46,6 +50,8 @@ div {
 #burger {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* justify-content: space-evenly; */
     width: 25px
 }
