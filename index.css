@@ -212,3 +212,65 @@ div {
     font-size: 25px;
     padding: 3px 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    #pfp {
+        width: 200px;
+        height: 200px;
+    }
+    #short-bio {
+        font-size: 15px;
+    }
+    .button {
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    #main {
+        padding: 25px 50px;
+    }
+    .project-name {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #pfp {
+        width: 150px;
+        height: 150px;
+    }
+    #short-bio {
+        font-size: 14px;
+    }
+    .sub-header h1 {
+        font-size: 20px;
+        line-height: 28px;    
+        height: 28px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+    }
+    #main {
+        padding: 12px 25px;
+    }
+}
+@media screen and (max-width: 520px) {
+    #pfp {
+        width: 100px;
+        height: 100px;
+    }
+    #short-bio {
+        font-size: 14px;
+    }
+    .sub-header h1 {
+        font-size: 20px;
+        line-height: 28px;    
+        height: 28px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+    }
+    #main {
+        padding: 5px 10px;
+    }
+    .project-name {
+        font-size: 14px;
+    }
+}
