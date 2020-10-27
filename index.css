@@ -14,12 +14,13 @@ body {
     background-color: #666F89;
     padding: 0 10px;
     overflow: hidden;
+    height: 100vh;
 }
 
 #main {
     padding: 50px 100px;
     width: 100%;
-    height: 93vh;
+    height: 93%;
     display: flex;
     flex-direction: column;
     color: white;
@@ -28,12 +29,6 @@ body {
     overflow-y: scroll;
 }
 
-#main::-webkit-scrollbar{
-    /* background-color: transparent; */
-}
-#main::-webkit-scrollbar-thumb {
-    /* background-color: transparent; */
-}
 #main::-webkit-scrollbar {
     width: 8px;   
 }
@@ -73,7 +68,7 @@ div {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 5vh;
+    height: 5%;
 }
 
 #links {
