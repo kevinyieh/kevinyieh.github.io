@@ -24,6 +24,7 @@
     bottom: 0;
     box-shadow: 5px 0px 20px 0px rgba(0,0,0,.4);
     transition: left 0.5s;
+    z-index: 1;
 }
 
 #nav-container.on-screen {
