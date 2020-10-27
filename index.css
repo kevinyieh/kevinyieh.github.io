@@ -328,4 +328,7 @@ div {
     #connect {
         margin-top: 5px;
     }
+    #short-bio {
+        height: auto;
+    }
 }
