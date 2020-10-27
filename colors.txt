@@ -1,0 +1,5 @@
+white: #FFFFFF
+light-gray: #CACBD5
+light-blue-gray: #666F89
+dark-blue-gray: #3D4252
+fb-blue: #2E5DD5

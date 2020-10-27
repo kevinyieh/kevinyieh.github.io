@@ -1,18 +1,27 @@
-body, p {
+body, p, h1, h2 , h3 {
     border: 0;
     padding: 0;
     margin: 0;
 }
 body {
-    background-color: #485059;
+    background-color: #666F89;
     padding: 10px;
+}
+
+#main {
+    padding: 50px 100px 0px 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 div {
     box-sizing: border-box;
     border-radius: 6px;
     font-family: "Titillium Web","Varela Round", sans-serif;
-    display: flex;
 }
 .separator {
     height: 1px;
@@ -63,4 +72,48 @@ div {
 }
 #burger:hover {
     cursor: pointer;
+}
+
+#pic-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#short-bio {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 75%;
+    font-size: 18px;
+}
+
+#pfp {
+    width: 350px;
+    border-radius: 3px;
+}
+
+.sub-header h1{
+    display: inline;
+    vertical-align: baseline;
+    font-size: 28px;
+    line-height: 28px;    
+    height: 28px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.sub-header h1 {
+    font-weight: bold;
+
+}
+
+.sub-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }

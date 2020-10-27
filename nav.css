@@ -4,14 +4,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(251, 253, 255, 0.6);
+    background-color: rgba(251, 253, 255, 0.75);
     border-radius: 0;
     opacity: 100;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s;
 }
 #nav-modal-backdrop.hidden {
     opacity: 0;
-    transition: opacity 0.3s;
 }
 
 #nav-container {
@@ -66,5 +65,5 @@
 }
 #nav-content .nav-item:hover {
     cursor: pointer;
-    color: #2E5DD5;
+    color: #FFF233;
 }
