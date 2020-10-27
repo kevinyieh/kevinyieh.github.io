@@ -3,19 +3,34 @@ body, p, h1, h2 , h3 {
     padding: 0;
     margin: 0;
 }
+img {
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
 body {
     background-color: #666F89;
     padding: 10px;
+    overflow: hidden;
 }
 
 #main {
     padding: 50px 100px 0px 100px;
     width: 100%;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+#main .separator{
+    margin: 30px 0;
+    min-height: 1px;
 }
 
 div {
@@ -25,8 +40,8 @@ div {
 }
 .separator {
     height: 1px;
-    background-color: gray;
-    width: 100%;
+    background-color: white;
+    width: 40%;
 }
 .header {
     /* background-color: #F2BC79;
@@ -42,7 +57,9 @@ div {
     font-size: 21px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 5vh;
 }
 
 .hidden {
@@ -77,7 +94,7 @@ div {
 #pic-bio {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
 }
@@ -85,19 +102,21 @@ div {
 #short-bio {
     display: flex;
     flex-direction: column;
-    padding: 15px;
     width: 75%;
+    height: 270px;
     font-size: 18px;
 }
 
 #pfp {
-    width: 350px;
-    border-radius: 3px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .sub-header h1{
-    display: inline;
-    vertical-align: baseline;
+    /* display: inline;
+    vertical-align: baseline; */
     font-size: 28px;
     line-height: 28px;    
     height: 28px;
@@ -106,14 +125,57 @@ div {
 }
 .sub-header h1 {
     font-weight: bold;
-
 }
 
 .sub-header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 25px;
+}
+
+#connect {
+    display: flex;
+    margin-top: 30px;
+}
+
+.button {
+    border-radius: 5%;
+    background-color:#3D4252;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-size: 17px;
+    transition: filter 0.3s;
+}
+.button:hover {
+    cursor: pointer;
+    filter: brightness(90%)
+}
+
+.project-item {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.project-img {
+    width:100%;
+    border-radius: 10px;
+}
+
+.project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: #2e5dd5cc; */
+    background-color:#3D4252;
+    font-size: 25px;
+    padding: 3px 10px;
 }
