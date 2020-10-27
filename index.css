@@ -28,6 +28,20 @@ body {
     overflow-y: scroll;
 }
 
+#main::-webkit-scrollbar{
+    /* background-color: transparent; */
+}
+#main::-webkit-scrollbar-thumb {
+    /* background-color: transparent; */
+}
+#main::-webkit-scrollbar {
+    width: 8px;   
+}
+#main::-webkit-scrollbar-thumb {
+    background-color: #CACBD5;  
+    border-radius: 5px;   
+}
+
 #main .separator{
     margin: 30px 0;
     min-height: 1px;
@@ -65,7 +79,7 @@ div {
 #links {
     display: flex;
     flex-direction: row;
-    min-width: 15%;
+    min-width: 120px;
     justify-content: space-evenly;
     font-size: 27px;
 }
@@ -213,6 +227,8 @@ div {
     padding: 3px 10px;
 }
 
+
+
 @media screen and (max-width: 1000px) {
     #pfp {
         width: 200px;
@@ -243,8 +259,8 @@ div {
     }
     .sub-header h1 {
         font-size: 20px;
-        line-height: 28px;    
-        height: 28px;
+        line-height: 20px;    
+        height: 20px;
         letter-spacing: 5px;
         word-spacing: 10px;
     }
@@ -261,9 +277,9 @@ div {
         font-size: 14px;
     }
     .sub-header h1 {
-        font-size: 20px;
-        line-height: 28px;    
-        height: 28px;
+        font-size: 18px;
+        line-height: 18px;    
+        height: 18px;
         letter-spacing: 2px;
         word-spacing: 5px;
     }
@@ -272,5 +288,12 @@ div {
     }
     .project-name {
         font-size: 14px;
+    }
+    .button {
+        padding: 2px 6px;
+        font-size: 14px;
+    }
+    #links {
+        font-size: 23px;
     }
 }
