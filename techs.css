@@ -1,0 +1,15 @@
+#technologies {
+    width: 100%;
+}
+#tech-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#tech-skills li {
+    padding: 0 2.5em 1em 0 ;
+}
+#tech-skills li img {
+    width: 80px
+}

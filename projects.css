@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 
 #projects-section .separator {
@@ -68,8 +69,10 @@
     align-self: center;
 }
 .project-description a {
-    transition: color 0.3s;
+    border-bottom: 1px solid white;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 .project-description a:hover {
     color: yellow;
+    border-bottom: 0px solid transparent;
 }
