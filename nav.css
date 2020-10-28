@@ -8,7 +8,7 @@
     border-radius: 0;
     opacity: 100;
     transition: opacity 0.4s;
-    z-index: 1;
+    z-index: 2;
 }
 #nav-modal-backdrop.hidden {
     opacity: 0;
@@ -26,7 +26,7 @@
     bottom: 0;
     box-shadow: 5px 0px 20px 0px rgba(0,0,0,.4);
     transition: left 0.5s;
-    z-index: 1;
+    z-index: 2;
 }
 
 #nav-container.on-screen {
