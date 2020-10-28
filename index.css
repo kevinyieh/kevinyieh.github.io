@@ -263,7 +263,7 @@ div {
         padding: 12px 25px;
     }
 }
-@media screen and (max-width: 520px) {
+/* @media screen and (max-width: 520px) {
     #pfp {
         width: 100px;
         height: 100px;
@@ -291,8 +291,8 @@ div {
     #links {
         font-size: 23px;
     }
-}
-@media screen and (max-width: 375px) {
+} */
+@media screen and (max-width: 520px) {
     #pfp {
         width: 85px;
         height: 85px;
