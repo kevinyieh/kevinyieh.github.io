@@ -20,7 +20,7 @@
     width: 25%;
     border-radius: 0;
     padding: 5%;
-    position: absolute;
+    position: fixed;
     left: -40%;
     top: 0;
     bottom: 0;
