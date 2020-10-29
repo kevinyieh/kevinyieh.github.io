@@ -194,6 +194,10 @@ div {
 .ext-bio-link {
     border-bottom: 1px solid white;
     font-weight: 650;
+    transition: filter 0.3s;
+}
+.ext-bio-link:hover {
+    filter: brightness(85%);
 }
 
 @media screen and (max-width: 1000px) {
