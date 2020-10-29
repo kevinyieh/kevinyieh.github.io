@@ -186,12 +186,22 @@ div {
     filter: brightness(90%)
 }
 
+#extended-bio {
+    width: 100%;
+    font-size: 21px;
+}
+
+.ext-bio-link {
+    border-bottom: 1px solid white;
+    font-weight: 650;
+}
+
 @media screen and (max-width: 1000px) {
     #pfp {
         width: 200px;
         height: 200px;
     }
-    #short-bio {
+    #short-bio, #extended-bio {
         font-size: 15px;
     }
     .button {
@@ -214,7 +224,7 @@ div {
         width: 150px;
         height: 150px;
     }
-    #short-bio {
+    #short-bio, #extended-bio {
         font-size: 14px;
     }
     .sub-header h1 {
@@ -236,9 +246,6 @@ div {
     #pfp {
         width: 85px;
         height: 85px;
-    }
-    #short-bio {
-        font-size: 14px;
     }
     .sub-header {
         margin-bottom: 15px;

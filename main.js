@@ -43,6 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const technologies = document.getElementById("technologies");
         technologies.scrollIntoView({behavior: 'smooth',block: 'start'})
     })
+    extendedBio.addEventListener("mousedown", e => {
+        hideNav();
+        const extBio = document.getElementById("extended-bio");
+        extBio.scrollIntoView({behavior: 'smooth',block: 'start'})
+    })
 })
 
 function scrollToTop(){
