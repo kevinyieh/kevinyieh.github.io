@@ -269,4 +269,7 @@ div {
     .project-description p{
         display: none;
     }
+    #nav-container {
+        width: 40%;
+    }
 }
