@@ -31,7 +31,6 @@
 
 #nav-container.on-screen {
     left: 0%;
-    transition: left 0.5s;
 }
 
 #nav-content {
