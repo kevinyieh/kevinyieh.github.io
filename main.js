@@ -31,17 +31,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     home.addEventListener("mousedown", e => {
         hideNav();
-        scrollToTop();
+        window.scrollTo({top: 0, behavior: 'smooth'})
     })
     projects.addEventListener("mousedown", e => {
         hideNav();
         const projectSection = document.getElementById("projects-section");
-        projectSection.scrollIntoView({behavior: 'smooth',block: 'start'})
+        scrollToElement(projectSection);
     })
     techSkills.addEventListener("mousedown", e => {
         hideNav();
         const technologies = document.getElementById("technologies");
-        technologies.scrollIntoView({behavior: 'smooth',block: 'start'})
+        scrollToElement(technologies);
     })
     extendedBio.addEventListener("mousedown", e => {
         hideNav();
@@ -50,10 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-function scrollToTop(){
-    const c = document.documentElement.scrollTop || document.body.scrollTop;
-    if (c > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, c - c / 8);
-    }
-};
+function scrollToElement(element) {
+    const bodyRect = document.body.getBoundingClientRect().top;
+    const elementRect = element.getBoundingClientRect().top;
+    const top = elementRect - bodyRect - 40;
+    window.scrollTo({top: top, behavior: 'smooth'});
+}
